@@ -186,7 +186,7 @@ blockquote {
 	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
 	color:#333;
 	text-align: center;
-	background-image: url(../images/blockquote.png);
+	background-image: image-url('blockquote');
 	background-repeat: no-repeat;
 	background-position: left top;
 }
@@ -196,7 +196,7 @@ blockquote {
 	color: #666;
 	text-decoration: none;
 	font-size: 14px;
-	background-image: url(../images/check.png);
+	background-image: image-url('check');
 	background-position: left center;
 	background-repeat: no-repeat;
 	padding-left: 16px;
@@ -210,7 +210,7 @@ blockquote {
 	text-decoration: none;
 	font-size: 14px;
 	color: #666;
-	background-image: url(../images/dot.png);
+	background-image: image-url('dot');
 	background-position: left center;
 	background-repeat: no-repeat;
 	padding-left: 20px;
@@ -225,7 +225,7 @@ blockquote {
 	text-decoration: none;
 	font-size: 14px;
 	color: #666;
-	background-image: url(../images/star.png);
+	background-image: image-url('star');
 	background-position: left center;
 	background-repeat: no-repeat;
 	padding-left: 20px;
@@ -262,7 +262,7 @@ a:hover {
 	padding: 10px 5px 10px 5px;
 }
 .star-divider {
-	background-image:url(../images/star_divider.png);
+	background-image: image-url('star_divider');
 	text-align: center;
 	display: block;
 	clear: both;
@@ -373,7 +373,7 @@ Header & Menu CSS
 	left: 20px;
 }
 .facebook a {
-	background-image: url(../images/facebook.png);
+	background-image: image-url('facebook');
 	background-position: 0 0px;
 	display: block;
 	height: 22px;
@@ -385,7 +385,7 @@ Header & Menu CSS
 	color: #444444;
 }
 .twitter a {
-	background-image: url(../images/twitter.png);
+	background-image: image-url('twitter');
 	background-position: 0 0px;
 	display: block;
 	height: 22px;
@@ -397,7 +397,7 @@ Header & Menu CSS
 	color: #444444;
 }
 .rss a {
-	background-image: url(../images/rss.png);
+	background-image: image-url('rss');
 	background-position: 0 0px;
 	display: block;
 	height: 22px;
@@ -425,7 +425,7 @@ Header & Menu CSS
 	z-index: 6000;
 }
 .slide {
-	background-image: url(../images/slide_button.png);
+	background-image: image-url('slide_button');
 	background-repeat: no-repeat;
 	position: fixed;
 	top: 33px;
@@ -735,7 +735,7 @@ This CSS is for the project page
 	text-decoration: none;
 	font-size: 9pt;
 	color: #666;
-	background-image: url(../images/check.png);
+	background-image: image-url('check');
 	background-position: left center;
 	background-repeat: no-repeat;
 	padding-left: 20px;
@@ -797,7 +797,7 @@ Blog CSS
 	padding-top: 20px;
 }
 .user {
-	background-image: url(../images/user.png);
+	background-image: image-url('user');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-right: 15px;
@@ -814,7 +814,7 @@ Blog CSS
 	color: #444444;
 }
 .comments {
-	background-image: url(../images/comments.png);
+	background-image: image-url('comments');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-right: 15px;
@@ -831,7 +831,7 @@ Blog CSS
 	color: #444444;
 }
 .tags {
-	background-image: url(../images/tags.png);
+	background-image: image-url('tags');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-right: 15px;
@@ -1085,7 +1085,7 @@ This is the CSS for the social links
 	float: right;
 }
 .dribbble a {
-	background-image: url(../images/dribbble.png);
+	background-image: image-url('dribbble');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-bottom: 8px;
@@ -1102,7 +1102,7 @@ This is the CSS for the social links
 	color: #444444;
 }
 .forrst a {
-	background-image: url(../images/forrst.png);
+	background-image: image-url('forrst');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-bottom: 8px;
@@ -1119,7 +1119,7 @@ This is the CSS for the social links
 	color: #444444;
 }
 .google a {
-	background-image: url(../images/google.png);
+	background-image: image-url('google');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-bottom: 8px;
@@ -1136,7 +1136,7 @@ This is the CSS for the social links
 	color: #444444;
 }
 .twitter_small a {
-	background-image: url(../images/twitter_small.png);
+	background-image: image-url('twitter_small');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-bottom: 8px;
@@ -1153,7 +1153,7 @@ This is the CSS for the social links
 	color: #444444;
 }
 .facebook_small a {
-	background-image: url(../images/facebook_small.png);
+	background-image: image-url('facebook_small');
 	background-position: 0 1px;
 	padding-bottom: 1px;
 	margin-bottom: 8px;

@@ -1,16 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'feature/index'
+  resources :feature, :contact, :portafolio,
+            :about, :home, only: [:index]
 
-  get 'contact/index'
-
-  get 'blog/index'
-
-  get 'portafolio/index'
-
-  get 'about/index'
-
-  get 'home/index'
+  resources :blog
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

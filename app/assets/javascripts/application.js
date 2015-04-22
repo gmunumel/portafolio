@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery-1.6.2.min
+//= require panelslide
+//= require custom
+//= require scrolltopcontrol
+//= require jquery.quicksand
+//= require jquery.nivo.slider.pack
+//= require nivo-options
+//= require jquery.fancybox-1.3.4.pack
+//= require jquery.easing-1.3.pack
+//= require jquery.mousewheel-3.0.4.pack

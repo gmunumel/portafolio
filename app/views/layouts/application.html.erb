@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Portafolio</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Portafolio</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <!--This is the START of the header-->
+    <%= render 'layouts/header' %>
+    <!--END of header-->
 
-<%= yield %>
+    <!--This is the START of the menu-->
+    <div id="menu-wrapper">
+      <%= render 'layouts/menu' %>
+    
+      <!--This is the START of the footer-->
+      <%= render 'layouts/footer' %>
+      <!--END of footer-->
+    </div>
+    <!--END of menu-->
 
-</body>
+    <!--This is the START of the content-->
+    <div id="content">
+
+      <%= yield %>
+    
+      <!--END of portfolio section-->
+    </div>
+
+    <p class="slide"><a href="#" class="btn-slide"></a></p>
+    <div id="slide-panel">
+	    <!--This is the START of the follow section-->
+      <%= render 'layouts/follow' %>
+      <!--END of follow section-->
+    </div>
+  </body>
 </html>

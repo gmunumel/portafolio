@@ -384,6 +384,18 @@ Header & Menu CSS
 	background-position: 0 -26px;
 	color: #444444;
 }
+.linkedin a {
+  background-image: image-url('linkedin');
+  background-position: 0 0px;
+  display: block;
+  height: 22px;
+  padding-left: 24px;
+  background-repeat: no-repeat
+}
+.linkedin a:hover {
+  background-position: 0 -24px;
+  color: #444444;
+}
 .twitter a {
 	background-image: image-url('twitter');
 	background-position: 0 0px;
@@ -1120,19 +1132,19 @@ This is the CSS for the social links
 }
 .google a {
 	background-image: image-url('google');
-	background-position: 0 1px;
+	background-position: 0 0px;
 	padding-bottom: 1px;
 	margin-bottom: 8px;
 	text-decoration: none;
 	font-size: 12px;
 	display: block;
-	height: 15px;
+	height: 22px;
 	color: #727272;
 	padding-left: 20px;
 	background-repeat: no-repeat
 }
 .google a:hover {
-	background-position: 0 -17px;
+	background-position: 0 -24px;
 	color: #444444;
 }
 .twitter_small a {

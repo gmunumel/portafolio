@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
+  devise_for :admin
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
+  root 'home#index'
+
   resources :feature, :contact, :portafolio,
-            :about, :home, only: [:index]
+            :about, only: [:index]
 
   resources :blog
 

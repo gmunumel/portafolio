@@ -43,3 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+# Added rails_admin (manually)
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
+# Added devise (manually)
+gem 'devise'

@@ -18,12 +18,12 @@
 <div id="container">
   <ul id="stage">
     <%- @projects.each do |project| %>
-        <li data-tags="{{ project.title }}">
+        <li data-tags="<%= project.category.title %>">
           <a href="project-sample.html">
-            <img src="images/portfolio/thumbs/image(1).jpg" alt="Illustration" />
+            <%= image_tag "portfolio/thumbs/image(1)", width: "200", height: "100" %>
           </a>
-          <h6>Helvetica</h6>
-          <p>Kinda sweet huh?<a class="readmore" href="project-sample.html">view →</a></p>
+          <h6><%= project.category.title %></h6>
+          <p><%= project.title %><a class="readmore" href="project-sample.html">view →</a></p>
         </li>
     <%- end %>
     <!--

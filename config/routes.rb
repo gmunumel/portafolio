@@ -5,8 +5,10 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :feature, :contact, :portafolio,
+  resources :feature, :contact,
             :about, only: [:index]
+
+  resources :portafolio, only: [:index, :show]
 
   resources :blog
 

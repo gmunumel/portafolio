@@ -48,3 +48,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 # Added devise (manually)
 gem 'devise'
+
+# Added protected_attributes 
+# to have attr_accessible
+gem 'protected_attributes'

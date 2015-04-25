@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :feature, :contact,
             :about, only: [:index]
 
-  resources :portafolio, only: [:index, :show]
+  resources :portfolio, only: [:index, :show]
 
   resources :blog
 

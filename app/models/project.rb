@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  belongs_to :category, :inverse_of => :project
+  belongs_to :category, inverse_of: :project
 
   attr_accessible :title, :text, :url,
                   :key_feature, :image_1,

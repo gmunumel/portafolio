@@ -1,8 +1,8 @@
-<div class="project-summary">
+<div class="recent-summary">
   <% i = 1 %>
   <%- @projects.take(num).each do |project| %>
-      <div class="<%= if i == num then 'one-third-last' else 'one-third' end %>">
-        <%= link_to image_tag("portfolio/" + project.image_1, width: "220", height: "132"), portfolio_path(project), class: "single_image", rel: "gallery1" %>
+      <div class="<%= if i == num then 'recent-item-last' else 'recent-item' end %>">
+        <%= link_to image_tag("portfolio/" + project.image_1, width: "250", height: "150"), portfolio_path(project), class: "single_image", rel: "gallery1" %>
         <%= link_to "", "portfolio/" + project.image_2, class: "single_image", rel: "gallery2" %>
         <%= link_to "", "portfolio/" + project.image_3, class: "single_image", rel: "gallery3" %>
         <h6><%= format_full_date project.created_at %></h6>

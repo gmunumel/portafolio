@@ -6,13 +6,6 @@
  * http://92five.net
  */
 $(document).ready(function(){
-
-/*
-var ready;
-
-ready = function(){
-
-*/
     $('.single_image').hover(
         function(){
             $(this).stop().fadeTo('slow',0.4);
@@ -21,10 +14,8 @@ ready = function(){
             $(this).stop().fadeTo('slow',1);
         });
 
-
-
     //This is basic - uses default settings
-    $("a.single_image").fancybox();
+    //$("a.single_image").fancybox();
     //Using custom settings
     $("a#inline").fancybox({
         'hideOnContentClick': true
@@ -130,8 +121,3 @@ ready = function(){
         }).appendTo('#filter');
     }
 });
-
-/*
-$(document).ready(ready);
-$(document).on('page:load', ready);
-    */

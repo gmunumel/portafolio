@@ -7,6 +7,7 @@ gem 'uglifier', '>= 1.3.0' # # compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.1.0' # use Coffeescript
 gem 'jquery-rails' # use jquery with Rails
 gem 'turbolinks' # following links faster
+gem 'jquery-turbolinks' # manage large bind with turbolinks
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git' # administrative site
 gem 'devise' # authentification solution
 gem 'protected_attributes' # to have protected attributes

@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery-1.6.2.min
 //= require panelslide
 //= require custom
@@ -23,3 +23,5 @@
 //= require jquery.fancybox-1.3.4.pack
 //= require jquery.easing-1.3.pack
 //= require jquery.mousewheel-3.0.4.pack
+//= require turbolinks
+

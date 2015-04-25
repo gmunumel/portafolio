@@ -2,12 +2,14 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails portafolio: development" uuid="9693061d-0a62-4d9a-8c48-470e54d79c15">
-      <first-sync>true</first-sync>
       <user-name>postgres</user-name>
+      <schema-pattern>portafolio_development.pg_catalog portafolio_development.public</schema-pattern>
+      <default-schemas>portafolio_development.pg_catalog portafolio_development.public</default-schemas>
     </data-source>
     <data-source name="Rails portafolio: test" uuid="8ff4af86-5a52-4c70-93b8-4456007b4578">
-      <first-sync>true</first-sync>
       <user-name>postgres</user-name>
+      <schema-pattern>portafolio_test.pg_catalog portafolio_test.public</schema-pattern>
+      <default-schemas>portafolio_test.pg_catalog portafolio_test.public</default-schemas>
     </data-source>
     <data-source name="Rails portafolio: production" uuid="079be35f-cfca-4ab7-b2ca-872809939e70">
       <first-sync>true</first-sync>

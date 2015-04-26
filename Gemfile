@@ -12,6 +12,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git' # administr
 gem 'devise' # authentification solution
 gem 'protected_attributes' # to have protected attributes
 gem 'coveralls', require: false # measure test coverage
+gem 'paperclip' # gem to manage images files easily
 
 group :test do
   gem 'capybara' # interact with pages in tests

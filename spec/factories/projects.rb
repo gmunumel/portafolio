@@ -7,5 +7,6 @@ FactoryGirl.define do
     image_1 { Faker::Lorem.word }
     image_2 { Faker::Lorem.word }
     image_3 { Faker::Lorem.word }
+    association :category, factory: :category
   end
 end

@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+Portfolio::Application.routes.draw do
 
   devise_for :admin
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

@@ -1,15 +1,16 @@
 <div class="project-summary">
-  <% i = 1 %>
-  <%- @projects.take(num).each do |project| %>
-      <div class="<%= if i == num then 'one-third-last' else 'one-third' end %>">
-        <%= link_to image_tag("portfolio/" + project.image_1, width: "220", height: "132"), portfolio_path(project), class: "single_image", rel: "gallery1" %>
-        <%= link_to "", "portfolio/" + project.image_2, class: "single_image", rel: "gallery2" %>
-        <%= link_to "", "portfolio/" + project.image_3, class: "single_image", rel: "gallery3" %>
+  <%- @projects.take(num).each_with_index do |project, index| %>
+      <div class="<%= if index == (num - 1) then 'one-third-last' else 'one-third' end %>">
+        <%- @projects.image.each_with_index do |photo, i| %>
+            <% if i == 0 %>
+                <%= link_to image_tag(photo.url, width: "220", height: "132"), portfolio_path(project), class: "single_image" %>
+            <% end %>
+            <%= link_to "", photo.url, class: "single_image" %>
+        <%- end %>
         <h6><%= format_full_date project.created_at %></h6>
         <p><%= project.title %>
           <%= link_to "view →", portfolio_path(project), class: "readmore" %>
         </p>
       </div>
-      <% i+= 1 %>
   <%- end %>
 </div>

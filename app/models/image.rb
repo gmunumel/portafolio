@@ -1,8 +1,9 @@
 class Image < ActiveRecord::Base
 
   has_and_belongs_to_many :projects
+  has_and_belongs_to_many :posts
 
-  attr_accessible :asset, :project_ids
+  attr_accessible :asset, :project_ids, :post_ids
 
   has_attached_file :asset,
                     :styles => {

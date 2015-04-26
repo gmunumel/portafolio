@@ -3,8 +3,8 @@
 <!--This is the START of the NIVO slider-->
 <div class="slider-wrapper theme-effe">
   <div id="slider" class="nivoSlider">
-    <%- @project.image.each_with_index do |photo, i| %>
-        <%= image_tag photo.url, title: "#img" + i %>
+    <%- @project.images.each_with_index do |photo, i| %>
+        <%= image_tag photo.asset.url, title: "#img" + i.to_s %>
     <%- end %>
   </div>
   <div id="slider-shadow"></div>

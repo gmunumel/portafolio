@@ -1,11 +1,11 @@
 <div class="recent-summary">
   <%- @projects.take(num).each_with_index do |project, index| %>
       <div class="<%= if index == (num - 1) then 'recent-item-last' else 'recent-item' end %>">
-        <%- @projects.images.each_with_index do |photo, i| %>
+        <%- @projects.first.images.each_with_index do |photo, i| %>
             <% if i == 0 %>
-                <%= link_to image_tag(photo.url, width: "250", height: "150"), portfolio_path(project), class: "single_image" %>
+                <%= link_to image_tag(photo.asset.url, width: "250", height: "150"), portfolio_path(project), class: "single_image" %>
             <% end %>
-            <%= link_to "", photo.url, class: "single_image" %>
+            <%= link_to "", photo.asset.url, class: "single_image" %>
         <%- end %>
         <h6><%= format_full_date project.created_at %></h6>
         <p><%= project.title %>

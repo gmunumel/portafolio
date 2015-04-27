@@ -5,6 +5,6 @@ class PortfolioController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
-    @projects = Project.order(:created_at)
+    @projects = Project.order(:created_at).take(3)
   end
 end

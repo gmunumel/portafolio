@@ -29,14 +29,9 @@
     <p>Here you can find some of our most recent and fresh content...</p>
   </div>
   <div class="recent-summary">
-    <div class="recent-item"> <a class="single_image" href="images/blog/large/recent1.jpg"><img src="images/blog/thumbs/recent1.jpg" width="250" height="150" alt="recent1" /></a>
-      <h6>NYC</h6>
-      <p>On a scooter?<a class="readmore" href="blog.html">read more →</a></p>
-    </div>
-    <div class="recent-item-last"> <a class="single_image" href="images/blog/large/recent2.jpg"><img src="images/blog/thumbs/recent2.jpg" width="250" height="150" alt="recent2" /></a>
-      <h6>Feathers</h6>
-      <p>Could drop some lorem here.<a class="readmore" href="blog.html">read more →</a></p>
-    </div>
+
+    <%= render partial: "posts", locals: {posts: @posts} %>
+
   </div>
   <!--END of recent posts-->
   <!--This is the START of the recent projects-->
@@ -45,11 +40,9 @@
       <h5>Recent projects</h5>
       <p>These are some of our latest projects, some nice stuff in here...</p>
     </div>
-    <div class="recent-summary">
 
-      <%= render partial: "projects", locals: {projects: @projects, num: 2} %>
+    <%= render partial: "projects", locals: {projects: @projects} %>
 
-    </div>
     <!--END of recent projects-->
     <div class="spacer"></div>
     <!--END of content-->

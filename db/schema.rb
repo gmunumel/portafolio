@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 20150426211154) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
+    t.string   "subtitle"
     t.text     "text"
     t.string   "tags"
     t.integer  "comments"

@@ -11,7 +11,7 @@ RSpec.describe 'portfolio/_projects.html.erb', type: :view do
     it 'should show projects information' do
       render template: 'portfolio/_projects',
              layout: 'layouts/application',
-             locals: {num: 3, projects: projects}
+             locals: {projects: projects}
       expect(rendered).to have_css('div.project-summary')
       expect(rendered).to have_css('div.one-third')
       expect(rendered).to have_css('div.one-third-last')

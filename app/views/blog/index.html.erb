@@ -1,3 +1,7 @@
+<% content_for :head do %>
+    <h6><%= link_to 'Home', :root %> → Blog</h6>
+<% end %>
+
 <%= render 'blog/menu' %>
 
 <!--This is the START of the blog section-->
@@ -5,9 +9,6 @@
   <%- @posts.each do |post| %>
       <div class="blog-item">
         <%= link_to image_tag(post.images.first.asset.url, width: "280", height: "180", class: "single_image"), blog_path(post) %>
-        <!--
-        <a href="blog-single.html"><img class="single_image" src="images/blog/thumbs/blog1.jpg" width="280" height="180" alt="blog1" /></a>
-        -->
         <div class="blog-item-info">
           <div class="user">gmunumel</div>
           <div class="comments"><%= post.comments %> comments</div>

@@ -91,7 +91,7 @@ $(document).ready(function(){
     $.each(itemsByTags,function(k,v){
         createList(k,v);
     });
-    $('#filter a').live('click',function(e){
+    $('#filter').on('click','a', function(e){
         var link = $(this);
 
         link.addClass('active').siblings().removeClass('active');

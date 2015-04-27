@@ -10,10 +10,10 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery.min
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require jquery-1.6.2.min
+//= require jquery.browser.min
 //= require panelslide
 //= require custom
 //= require scrolltopcontrol

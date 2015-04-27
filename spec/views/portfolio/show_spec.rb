@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "portfolio/show.html.erb", type: :view do
+RSpec.describe 'portfolio/show.html.erb', type: :view do
   let(:project) { build_stubbed(:project) }
   let(:projects) { build_stubbed_list(:project, 3) }
 

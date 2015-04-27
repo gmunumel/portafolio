@@ -3,67 +3,25 @@
 <!--This is the START of the blog section-->
 <div id="blog">
   <%- @posts.each do |post| %>
-  <div class="blog-item">
-    <%= link_to image_tag("blog/1/" + post.image_1, width: "280", height: "180", class: "single_image"), blog_path(post) %>
-    <!--
-    <a href="blog-single.html"><img class="single_image" src="images/blog/thumbs/blog1.jpg" width="280" height="180" alt="blog1" /></a>
-    -->
-    <div class="blog-item-info">
-      <div class="user">gmunumel</div>
-      <div class="comments"><%= post.comments %> comments</div>
-      <div class="tags"><%= post.tags %></div>
-    </div>
-    <div class="blog-item-content">
-      <a href="<%= blog_path(post) %>">
-        <h5><%= post.title %></h5>
-      </a>
-      <p><%= post.text %></p>
-      <%= link_to "view →", blog_path(post), class: "readmore" %> <br />
-    </div>
-  </div>
-  <%- end %>
-  <!--
-  <div class="blog-item"> <a href="blog-single.html"><img class="single_image" src="images/blog/thumbs/blog2.jpg" width="280" height="180" alt="blog2" /></a>
-    <div class="blog-item-content">
-      <div class="blog-item-info">
-        <div class="user">admin</div>
-        <div class="comments">6 comments</div>
-        <div class="tags">psd news blog post</div>
+      <div class="blog-item">
+        <%= link_to image_tag(post.images.first.asset.url, width: "280", height: "180", class: "single_image"), blog_path(post) %>
+        <!--
+        <a href="blog-single.html"><img class="single_image" src="images/blog/thumbs/blog1.jpg" width="280" height="180" alt="blog1" /></a>
+        -->
+        <div class="blog-item-info">
+          <div class="user">gmunumel</div>
+          <div class="comments"><%= post.comments %> comments</div>
+          <div class="tags"><%= post.tags %></div>
+        </div>
+        <div class="blog-item-content">
+          <a href="<%= blog_path(post) %>">
+            <h5><%= post.title %></h5>
+          </a>
+          <p><%= post.text %></p>
+          <%= link_to "view →", blog_path(post), class: "readmore" %> <br />
+        </div>
       </div>
-      <a href="blog-single.html">
-        <h5>Another one is here</h5>
-      </a>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <a class="readmore" href="blog-single.html">read more →</a> <br />
-    </div>
-  </div>
-  <div class="blog-item"> <a href="blog-single.html"><img class="single_image" src="images/blog/thumbs/blog3.jpg" width="280" height="180" alt="blog3" /></a>
-    <div class="blog-item-info">
-      <div class="user">admin</div>
-      <div class="comments">6 comments</div>
-      <div class="tags">psd news blog post</div>
-    </div>
-    <div class="blog-item-content"> <a href="blog-single.html">
-      <h5>And this is the last of our blog</h5>
-    </a>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <a class="readmore" href="blog-single.html">read more →</a> <br />
-    </div>
-  </div>
-  <div class="blog-item"> <a href="blog-single.html"><img class="single_image" src="images/blog/thumbs/blog4.jpg" width="280" height="180" alt="blog4" /></a>
-    <div class="blog-item-info">
-      <div class="user">admin</div>
-      <div class="comments">3 comments</div>
-      <div class="tags">psd news blog post</div>
-    </div>
-    <div class="blog-item-content"> <a href="blog-single.html">
-      <h5>Captain we need more power!</h5>
-    </a>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <a class="readmore" href="blog-single.html">read more →</a> <br />
-    </div>
-  </div>
-  -->
-  <div id="pagination"> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">...</a> <a href="#">→</a> </div>
+  <%- end %>
+  <div id="pagination"> <%= will_paginate @posts %> </div>
 </div>
 <!--END of blog section-->

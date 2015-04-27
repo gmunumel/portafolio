@@ -13,6 +13,7 @@ gem 'devise' # authentification solution
 gem 'protected_attributes' # to have protected attributes
 gem 'coveralls', require: false # measure test coverage
 gem 'paperclip' # gem to manage images files easily
+gem 'will_paginate' # pagination gem for rails branch
 
 group :test do
   gem 'capybara' # interact with pages in tests

@@ -8,9 +8,12 @@ Author: 92five
 Author URI: http://92five.net
 */
 
+.nivoContainer {
+  height: 500px;
+}
 .theme-effe .nivoSlider {
 	width: 720px;
-	height: 320px;
+	//height: 320px;
 	position:relative;
 	margin-left: auto;
 	margin-right: auto;

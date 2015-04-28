@@ -10,28 +10,39 @@
     <li><%= link_to 'Features', :feature_index %></li>
 <% end %>
 
+<h2>Contact me</h2>
+<p>If you would like to contact me use any of these social networks!</p>
+<div class="spacer"></div>
+
 <!--This is the START of the contact section-->
 <div id="contact">
-  <h5 style="margin-top:10px;">Contact us</h5>
-  <p>If you would like to contact us use this form, and we will get back to you shortly!</p>
-  <form name="contact" action="scripts/contact.php" id="contactform" method="post">
-    <div class="boxes">
-      <h6>name<span class="required">*</span></h6>
-      <div class="box">
-        <input name="name" type="text" class="input" id="sender_name" />
-      </div>
-      <h6>email<span class="required">*</span></h6>
-      <div class="box">
-        <input name="email" type="text" class="input" id="sender_email" />
-      </div>
-      <h6>message</h6>
-      <div class="msgbox">
-        <textarea name="cf_message" rows="50" cols="30" class="message" id="cf_message"></textarea>
-      </div>
-      <div class="submitbtn">
-        <input type="submit" class="button btncolor" onClick="MM_validateForm('sender_name','','R');MM_validateForm('sender_email','','RisEmail');return document.MM_returnValue" value="Send Message" />
-      </div>
-    </div>
-  </form>
+  <div class="one-third">
+    <ul class="styled-list-star">
+      <li>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+        <!-- Place this tag where you want the widget to render. -->
+        <div class="g-person" data-href="//plus.google.com/u/0/103360893345426367519" data-layout="landscape" data-rel="author"></div>
+      </li>
+      <li>
+        <!-- Facebook Badge START -->
+        <a href="https://www.facebook.com/n0dix" title="Gabriel Mu&#xf1;umel" target="_TOP"><img class="img" src="https://badge.facebook.com/badge/100000208600638.3747.548205693.png" style="border: 0px;" alt="" /></a><!-- Facebook Badge END -->
+      </li>
+      <li>
+        <a target="_blank" href="https://uk.linkedin.com/in/gmunumel/en">
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Gabriel David Muñumel Mesa's profile on LinkedIn">
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="http://stackoverflow.com/users/992347/gabriel-mu%c3%b1umel">
+          <img src="http://stackoverflow.com/users/flair/992347.png" alt="profile for Gabriel Mu&#241;umel at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Gabriel Mu&#241;umel at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+        </a>
+      </li>
+      <li>
+        <iframe src="http://githubbadge.appspot.com/gmunumel" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+      </li>
+    </ul>
+  </div>
 </div>
 <!--END of contact section-->

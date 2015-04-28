@@ -2434,6 +2434,7 @@
     <table name="posts" schema="public" catalog="portfolio_development" type="TABLE">
       <column name="id" sqlType="serial" precision="10" scale="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgncG9zdHNfaWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
       <column name="title" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
+      <column name="subtitle" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="text" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="tags" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="comments" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
@@ -21416,6 +21417,7 @@
     <table name="posts" schema="public" catalog="portfolio_test" type="TABLE">
       <column name="id" sqlType="serial" precision="10" scale="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgncG9zdHNfaWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
       <column name="title" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
+      <column name="subtitle" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="text" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="tags" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="comments" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>

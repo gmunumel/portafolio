@@ -5,8 +5,7 @@ Portfolio::Application.routes.draw do
 
   root 'home#index'
 
-  resources :feature, :contact,
-            :about, only: [:index]
+  resources :contact, :about, only: [:index]
 
   resources :blog, :portfolio, only: [:index, :show]
 

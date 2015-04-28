@@ -329,7 +329,7 @@ Header & Menu CSS
 	font-size: 7pt;
 }
 #social-box {
-	width: 96px;
+	//width: 96px;
 	height: 22px;
 	position: fixed;
 	bottom: 40px;
@@ -995,9 +995,12 @@ Contact CSS
 	margin-bottom: 40px;
 	padding: 20px 70px 20px 0px;
 	;
+    /*
+     * removed right line
 	border-right: 1px;
 	border-style: solid;
 	border-color: #d6d6d6;
+	*/
 }
 #contactform {
 	padding-top: 10px;
@@ -1192,3 +1195,4 @@ This is the CSS for the social links
 	background-position: 0 -17px;
 	color: #444444;
 }
+

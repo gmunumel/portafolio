@@ -638,6 +638,7 @@ About us CSS
 }
 .about p {
 	text-align: justify;
+    font-size: large;
 }
 .team-text {
 	text-align: center;
@@ -740,6 +741,9 @@ This CSS is for the project page
 	padding-bottom: 20px;
 	float: left;
 	width: 480px;
+}
+#description p {
+  font-size: large;
 }
 #work {
 	margin-top: 15px;
@@ -909,6 +913,7 @@ Blog CSS
 .blog-item-single-content p {
 	text-align: left;
 	padding-bottom: 20px;
+    font-size: large;
 }
 .social-blog-buttons {
 	display: inline;

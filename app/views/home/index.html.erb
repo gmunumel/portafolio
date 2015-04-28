@@ -10,23 +10,21 @@
 <% end %>
 
 <!--This is the START of the NIVO slider-->
-<div class="nivoContainer">
-  <div class="slider-wrapper theme-effe">
-    <div id="slider" class="nivoSlider">
-      <%= image_tag "slider/slide1", title: "#img1" %>
-      <%= image_tag "slider/slide2", title: "#img2" %>
-      <%= image_tag "slider/slide3", title: "#img3" %>
-      <%= image_tag "slider/slide4", title: "#img4" %>
-    </div>
+<div class="slider-wrapper theme-effe">
+  <div id="slider" class="nivoSlider">
+    <%= image_tag "slider/slide1", title: "#img1" %>
+    <%= image_tag "slider/slide2", title: "#img2" %>
+    <%= image_tag "slider/slide3", title: "#img3" %>
+    <%= image_tag "slider/slide4", title: "#img4" %>
   </div>
 </div>
 <!--END of NIVO Slider-->
 <!--This is the START of the recent posts-->
 <div class="spacer"></div>
 <div id="recent-text">
-  <h2>These are some of my latest posts...</h2>
+  <h2>These are some of my latest posts and projects...</h2>
   <div class="star-divider"></div>
-  <h5>You can check them out in my blog section!</h5>
+  <h5>You can check them out in my sections!</h5>
   <div class="spacer"></div>
 </div>
 <div id="recent-posts-container">
@@ -44,7 +42,7 @@
   <div id="recent-projects-container">
     <div class="section-description">
       <h5>Recent projects</h5>
-      <p>These are some of my latest projects, some nice stuff in here...</p>
+      <p>These are some of my latest projects...</p>
     </div>
 
     <%= render partial: "projects", locals: {projects: @projects} %>

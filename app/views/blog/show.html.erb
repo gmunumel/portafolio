@@ -14,8 +14,10 @@
       <div class="tags"><%= @post.tags %></div>
     </div>
     <div class="blog-item-single-content">
-      <%= link_to image_tag(@post.images.first.asset.url, width: "780", height: "280", class: "single_image", alt: "blog1"), blog_path(@post) %>
       <p><%= @post.text %></p>
+      <%- @post.images.each do |photo| %>
+          <%= link_to image_tag(photo.asset.url, width: "250", height: "150"), url_for(photo.asset.url), class: "single_image" %>
+      <%- end %>
     </div>
     <div class="social-blog-buttons"> <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="92_Five">Tweet</a>
       <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>

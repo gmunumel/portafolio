@@ -9,5 +9,29 @@
     <li><%= link_to 'Contact →', :contact_index, class: 'selected' %></li>
     <li><%= link_to 'Features', :feature_index %></li>
 <% end %>
-<h1>Contact#index</h1>
-<p>Find me in app/views/contact/index.html.erb</p>
+
+<!--This is the START of the contact section-->
+<div id="contact">
+  <h5 style="margin-top:10px;">Contact us</h5>
+  <p>If you would like to contact us use this form, and we will get back to you shortly!</p>
+  <form name="contact" action="scripts/contact.php" id="contactform" method="post">
+    <div class="boxes">
+      <h6>name<span class="required">*</span></h6>
+      <div class="box">
+        <input name="name" type="text" class="input" id="sender_name" />
+      </div>
+      <h6>email<span class="required">*</span></h6>
+      <div class="box">
+        <input name="email" type="text" class="input" id="sender_email" />
+      </div>
+      <h6>message</h6>
+      <div class="msgbox">
+        <textarea name="cf_message" rows="50" cols="30" class="message" id="cf_message"></textarea>
+      </div>
+      <div class="submitbtn">
+        <input type="submit" class="button btncolor" onClick="MM_validateForm('sender_name','','R');MM_validateForm('sender_email','','RisEmail');return document.MM_returnValue" value="Send Message" />
+      </div>
+    </div>
+  </form>
+</div>
+<!--END of contact section-->

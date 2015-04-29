@@ -10,8 +10,8 @@ RSpec.describe 'layouts/application.html.erb', type: :view do
       render and expect(view).to render_template /layouts\/_menu/
     end
 
-    specify 'follow' do
-      render and expect(view).to render_template /layouts\/_follow/
+    specify 'hire' do
+      render and expect(view).to render_template /layouts\/_hire/
     end
 
     specify 'footer' do

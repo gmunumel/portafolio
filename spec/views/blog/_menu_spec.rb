@@ -9,6 +9,5 @@ RSpec.describe 'blog/_menu.html.erb', type: :view do
     expect(rendered).to have_link('Portfolio', href: portfolio_index_path)
     expect(rendered).to have_link('Blog →', href: blog_index_path)
     expect(rendered).to have_link('Contact', href: contact_index_path)
-    expect(rendered).to have_link('Feature', href: feature_index_path)
   end
 end

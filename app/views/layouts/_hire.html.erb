@@ -3,7 +3,7 @@
   <h6>I do make some awesome websites using the best web frameworks like Ruby on Rails, Django, Symfony, CodeIgniter and more... </h6>
   <h6>I also make creative and personalized Android apps</h6>
   <h6>If you want to see a preview of my work please visit my <%= link_to 'Portfolio', :portfolio_index %></h6>
-  <h6>If you want to see my pricing table please <a href="/about#pricing-table">visit</a></h6>
+  <h6>If you want to see my pricing table please <%= link_to 'visit', about_index_path(anchor: 'pricing-table') %></h6>
   <div class="star-divider" ></div>
   <%= link_to image_tag("hire_me"), :contact_index %>
   <h5>Thanks for your time! ☺</h5>

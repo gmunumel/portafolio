@@ -15,7 +15,7 @@
   <div id="description">
     <h3><%= @project.title %></h3>
     <p><%= @project.text %></p>
-    <p><b>Check it out:</b> <%= link_to @project.url %></p>
+    <p><b>Check it out:</b> <%= link_to @project.url, @project.url %></p>
   </div>
   <ul id="work">
     <% @project.key_feature.split(/;/).each do |feature| %>

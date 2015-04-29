@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
+
 gem 'rails' # Rails web server for Ruby
 gem 'pg' # Ruby interface for PostgreSQL
 gem 'sass-rails' # use SASS instead of CSS

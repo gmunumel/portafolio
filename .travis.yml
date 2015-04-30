@@ -3,4 +3,9 @@ language: ruby
 rvm:
   - 2.2.0
 
-script: xvfb-run bundle exec rspec spec
+before_script:
+  - rake db:drop:all
+  - rake db:create
+  - rake db:migrate
+
+script: bundle exec rspec spec

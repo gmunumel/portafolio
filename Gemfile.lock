@@ -264,6 +264,10 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    rspec (3.2.0)
+      rspec-core (~> 3.2.0)
+      rspec-expectations (~> 3.2.0)
+      rspec-mocks (~> 3.2.0)
     rspec-core (3.2.3)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.1)
@@ -378,6 +382,7 @@ DEPENDENCIES
   rails
   rails_12factor
   rails_admin!
+  rspec
   rspec-rails
   sass-rails
   shoulda-matchers

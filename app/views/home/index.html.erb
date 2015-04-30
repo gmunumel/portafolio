@@ -12,10 +12,9 @@
 <!--This is the START of the NIVO slider-->
 <div class="slider-wrapper theme-effe" data-no-turbolink>
   <div id="slider" class="nivoSlider">
-    <%= image_tag "slider/slide1", title: "#img1" %>
-    <%= image_tag "slider/slide2", title: "#img2" %>
-    <%= image_tag "slider/slide3", title: "#img3" %>
-    <%= image_tag "slider/slide4", title: "#img4" %>
+    <%- @projects.each do |project| %>
+        <%= link_to image_tag(project.images.first.asset.url), portfolio_path(project) %>
+    <%- end %>
   </div>
 </div>
 <!--END of NIVO Slider-->

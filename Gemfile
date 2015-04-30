@@ -16,6 +16,7 @@ gem 'protected_attributes' # to have protected attributes
 gem 'coveralls', require: false # measure test coverage
 gem 'paperclip' # gem to manage images files easily
 gem 'will_paginate' # pagination gem for rails branch
+gem 'paperclip-dropbox', '>= 1.1.7' # upload images to dropbox
 
 group :test do
   gem 'capybara' # interact with pages in tests

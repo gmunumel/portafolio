@@ -6,6 +6,8 @@ class Image < ActiveRecord::Base
   attr_accessible :asset, :project_ids, :post_ids
 
   has_attached_file :asset,
+                    :storage => :dropbox,
+                    :dropbox_credentials => Rails.root.join("config/dropbox.yml"),
                     :styles => {
                         :thumb => "100x100#",
                         :small  => "150x150>",

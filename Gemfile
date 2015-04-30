@@ -40,7 +40,6 @@ group :development, :test do
   gem 'launchy' # open capybara-generated pages in browser
   gem 'web-console' # debugging tools for Rails
   gem 'travis' # travis CI (Continuous Integration)
-  gem 'rspec' # to run rspec tests
 end
 
 group :production do

@@ -1,2 +1,7 @@
 language: ruby
-script: 'true'
+
+rvm:
+  - 2.1.1
+  - jruby-19mode
+
+script: rspec spec

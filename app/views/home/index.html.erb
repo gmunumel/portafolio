@@ -13,7 +13,9 @@
 <div class="slider-wrapper theme-effe" data-no-turbolink>
   <div id="slider" class="nivoSlider">
     <%- @projects.each do |project| %>
-        <%= link_to image_tag(project.images.first.asset.url), portfolio_path(project) %>
+        <% if project.images.any? %>
+            <%= link_to image_tag(project.images.first.asset.url), portfolio_path(project) %>
+        <% end %>
     <%- end %>
   </div>
 </div>

@@ -2,7 +2,9 @@
   <% num = 1 %>
   <%- @posts.each_with_index do |post, index| %>
       <div class="<%= if index == num then 'recent-item-last' else 'recent-item' end %>">
-        <%= link_to image_tag(post.images.first.asset.url, width: "250", height: "150"), blog_path(post), class: "single_image"  %>
+        <% if post.images.any? %>
+            <%= link_to image_tag(post.images.first.asset.url, width: "250", height: "150"), blog_path(post) %>
+        <% end %>
         <h6><%= post.title %></h6>
         <p><%= post.subtitle %><%= link_to "view →", blog_path(post), class: "readmore" %></p>
       </div>

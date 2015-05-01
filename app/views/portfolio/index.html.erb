@@ -10,7 +10,9 @@
   <ul id="stage">
     <%- @projects.each do |project| %>
         <li data-tags="<%= project.category.title %>">
-          <%= link_to image_tag(project.images.first.asset.url, width: "200", height: "100"), portfolio_path(project) %>
+          <% if project.images.any? %>
+              <%= link_to image_tag(project.images.first.asset.url, width: "200", height: "100"), portfolio_path(project) %>
+          <% end %>
           <h6><%= project.category.title %></h6>
           <p><%= project.title %>
             <%= link_to "view →", portfolio_path(project), class: "readmore" %>

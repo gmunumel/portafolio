@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(version: 20150426211154) do
     t.string   "title"
     t.text     "text"
     t.string   "url"
-    t.string   "key_feature"
+    t.text     "key_feature"
     t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

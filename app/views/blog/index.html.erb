@@ -8,7 +8,9 @@
 <div id="blog">
   <%- @posts.each do |post| %>
       <div class="blog-item">
-        <%= link_to image_tag(post.images.first.asset.url, width: "280", height: "180", class: "single_image"), blog_path(post) %>
+        <% if post.images.any? %>
+            <%= link_to image_tag(post.images.first.asset.url, width: "280", height: "180", class: "single_image"), blog_path(post) %>
+        <% end %>
         <div class="blog-item-info">
           <div class="user">gmunumel</div>
           <div class="comments"><%= post.comments %> comments</div>

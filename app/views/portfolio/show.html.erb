@@ -14,7 +14,8 @@
 <div class="project">
   <div id="description">
     <h3><%= @project.title %></h3>
-    <p><%= @project.text %></p>
+    <p><%= simple_format h @project.text %></p>
+    <br />
     <p><b>Check it out:</b> <%= link_to @project.url, @project.url %></p>
   </div>
   <ul id="work">

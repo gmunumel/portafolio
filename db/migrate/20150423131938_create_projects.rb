@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :title
       t.text :text
       t.string :url
-      t.string :key_feature
+      t.text :key_feature
       t.integer :category_id
 
       t.timestamps null: false

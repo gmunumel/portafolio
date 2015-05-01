@@ -12,7 +12,7 @@ ready = function() {
         startSlide: 0, // Set starting Slide (0 index)
         directionNav: true, // Next & Prev navigation
         directionNavHide: true, // Only show on hover
-        controlNav: true, // 1,2,3... navigation
+        controlNav: false, // 1,2,3... navigation
         controlNavThumbs: false, // Use thumbnails for Control Nav
         controlNavThumbsFromRel: false, // Use image rel for thumbs
         controlNavThumbsSearch: '.jpg', // Replace this with...

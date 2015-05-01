@@ -5,5 +5,4 @@ class Project < ActiveRecord::Base
   attr_accessible :title, :text, :url,
                   :key_feature, :category_id, :image_ids
 
-
 end

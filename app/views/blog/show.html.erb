@@ -15,9 +15,11 @@
     </div>
     <div class="blog-item-single-content">
       <p><%= @post.text %></p>
-      <%- @post.images.each do |photo| %>
-          <%= link_to image_tag(photo.asset.url, width: "100", height: "100"), url_for(photo.asset.url), class: "single_image" %>
-      <%- end %>
+      <% if @post.images.any? %>
+          <%- @post.images.each do |photo| %>
+              <%= link_to image_tag(photo.asset.url, width: "100", height: "100"), url_for(photo.asset.url), class: "single_image" %>
+          <%- end %>
+      <% end %>
     </div>
   </div>
 </div>

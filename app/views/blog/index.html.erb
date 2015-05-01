@@ -20,7 +20,7 @@
           <a href="<%= blog_path(post) %>">
             <h5><%= post.title %></h5>
           </a>
-          <p><%= post.text %></p>
+          <p><%= truncate post.text, length: 260, omission: '...' %></p>
           <%= link_to "view →", blog_path(post), class: "readmore" %> <br />
         </div>
       </div>

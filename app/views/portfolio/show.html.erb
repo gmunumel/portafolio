@@ -20,7 +20,7 @@
   </div>
   <ul id="work">
     <% @project.key_feature.split(/;/).each do |feature| %>
-        <li><%= feature %></li>
+        <li><%= simple_format h feature %></li>
     <% end %>
   </ul>
 </div>

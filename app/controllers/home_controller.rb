@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @projects = Project.order(:created_at).take(2)
-    @posts = Post.order(:created_at).take(2)
+    @projects = Project.order(:created_at)
+    @posts = Post.order(:created_at)
   end
 end

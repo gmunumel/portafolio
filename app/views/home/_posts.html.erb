@@ -1,6 +1,6 @@
 <div class="recent-summary">
   <% num = 1 %>
-  <%- @posts.each_with_index do |post, index| %>
+  <%- @posts.take(2).each_with_index do |post, index| %>
       <div class="<%= if index == num then 'recent-item-last' else 'recent-item' end %>">
         <% if post.images.any? %>
             <%= link_to image_tag(post.images.first.asset.url, width: "250", height: "150"), blog_path(post) %>

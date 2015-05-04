@@ -8,7 +8,9 @@
 <div id="blog">
   <div class="blog-item-single">
     <h3><%= @post.title %></h3>
-    <p><%= @post.subtitle %></p>
+    <p class="alignleft"><%= @post.subtitle %></p>
+    <p class="alignright"><%= format_full_date @post.created_at %></p>
+    <div style="clear: both;"></div>
     <div class="blog-item-single-info">
       <div class="user">gmunumel</div>
       <div class="comments"><%= @post.comments %> comments</div>

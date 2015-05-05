@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/alucard/workspace/Code/portfolio/spec/controllers/blog_controller_spec.rb @ line 19 :
+
+    [1;34m14[0m:     expect([1;34;4mPost[0m).to receive([33m:paginate[0m).with([35mpage[0m: [31m[1;31m'[0m[31m2[1;31m'[0m[31m[0m).ordered.
+    [1;34m15[0m:                            and_return( posts.paginate([35mper_page[0m: [1;34m2[0m) )
+    [1;34m16[0m:     get [33m:index[0m, [35mpage[0m: [1;34m2[0m
+    [1;34m17[0m:     binding.pry
+    [1;34m18[0m: 
+ => [1;34m19[0m:     expect(assigns([33m:posts[0m).count).to eq [1;34m2[0m
+    [1;34m20[0m:     expect(response).to render_template [31m[1;31m'[0m[31mindex[1;31m'[0m[31m[0m
+    [1;34m21[0m:   [32mend[0m
+    [1;34m22[0m: 
+    [1;34m23[0m:   specify [31m[1;31m'[0m[31m#show[1;31m'[0m[31m[0m [32mdo[0m
+    [1;34m24[0m:     expect([1;34;4mPost[0m).to receive([33m:find[0m).with(post.id.to_s).and_return(post)
+

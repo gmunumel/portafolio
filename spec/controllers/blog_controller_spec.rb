@@ -6,12 +6,7 @@ RSpec.describe Portfolio::BlogController, type: :controller do
   let(:post) {build_stubbed :post}
 
   specify '#index' do
-=begin
-    expect(Post).to receive_messages(
-                        :paginate => (:page => "2"),
-                    ).and_return( posts.paginate(per_page: 2) )
-=end
-    expect(Post).to receive(:paginate).with(page: "2", order: 'created_at DESC').
+    expect(Post).to receive(:paginate).with(page: '2').
                            and_return( posts.paginate(per_page: 2) )
     get :index, page: 2
 
